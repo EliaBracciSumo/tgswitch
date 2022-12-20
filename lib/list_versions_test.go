@@ -4,14 +4,14 @@ import (
 	"log"
 	"testing"
 
-	"github.com/EliaBracciSumo/tgswitch/lib"
+	"github.com/warrensbox/tgswitch/lib"
 )
 
 const (
 	gruntURL = "https://api.github.com/repos/gruntwork-io/terragrunt/releases"
 )
 
-// TestRemoveDuplicateVersions :  test to removed duplicate
+//TestRemoveDuplicateVersions :  test to removed duplicate
 func TestRemoveDuplicateVersions(t *testing.T) {
 
 	test_array := []string{"0.0.1", "0.0.2", "0.0.3", "0.0.1"}
@@ -25,7 +25,7 @@ func TestRemoveDuplicateVersions(t *testing.T) {
 	}
 }
 
-// TestValidVersionFormat : test if func returns valid version format
+//TestValidVersionFormat : test if func returns valid version format
 // more regex testing at https://rubular.com/r/UvWXui7EU2icSb
 func TestValidVersionFormat(t *testing.T) {
 
