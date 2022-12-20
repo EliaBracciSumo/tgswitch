@@ -76,12 +76,11 @@ function runtestarg(){
     commentComplete
 }
 
-#runtestdir "terragrunt version" "test_terragrunt-version" "v0.26.7"
+runtestdir "terragrunt version" "test_terragrunt-version" "v0.36.0"
 runtestdir "terragrunt hcl" "test_terragrunt_hcl" "v0.36.0"
 runtestdir "tgswitchrc" "test_tgswitchrc" "v0.33.0"
 runtestdir ".toml" "test_tgswitchtoml" "v0.34.0"
 runtestenv "env variable" "0.37.1" "v0.37.1"
-#runtestenv "env variable" "0.26.7" "v0.26.7"
 runtestarg "passing argument" "0.36.1" "v0.36.1"
 # M1 darwin arm64 test versions < 0.28.12
 runtestdir "terragrunt version" "test_terragrunt-version_m1" "v0.26.7"

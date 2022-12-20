@@ -225,8 +225,6 @@ func Install(tgversion string, usrBinPath string, mirrorURL string) string {
 	/* proceed to download it from the hashicorp release page */
 	url := mirrorURL + "v" + tgversion + "/" + "terragrunt" + "_" + goos + "_" + goarch
 
-	fmt.Printf("\n Downloading terragrunt from %s", url)
-
 	downloadedFile, errDownload := DownloadFromURL(installLocation, url)
 
 	/* If unable to download file from url, exit(1) immediately */

@@ -1,8 +1,8 @@
 site_name: tgswitch
 site_description: A command line tool to switch between different versions of terragrunt (install with homebrew and more)
-copyright: This project is maintained by EliaBracciSumo
-repo_name: EliaBracciSumo/tgswitch
-repo_url: https://github.com/EliaBracciSumo/tgswitch
+copyright: This project is maintained by warrensbox
+repo_name: warrensbox/tgswitch
+repo_url: https://github.com/warrensbox/tgswitch
 site_url: https://tgswitch.warrensbox.com
 
 theme:
