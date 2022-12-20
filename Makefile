@@ -1,6 +1,6 @@
 EXE  := tgswitch
-PKG  := github.com/warrensbox/tgswitch
-VER := $(shell { git ls-remote --tags . 2>/dev/null || git ls-remote --tags git@github.com:warrensbox/tgswitch.git; } | awk '{if ($$2 ~ "\\^\\{\\}$$") next; print vers[split($$2,vers,"\\/")]}' | sort -n -t. -k1,1 -k2,2 -k3,3 | tail -1)
+PKG  := github.com/EliaBracciSumo/tgswitch
+VER := $(shell { git ls-remote --tags . 2>/dev/null || git ls-remote --tags git@github.com:EliaBracciSumo/tgswitch.git; } | awk '{if ($$2 ~ "\\^\\{\\}$$") next; print vers[split($$2,vers,"\\/")]}' | sort -n -t. -k1,1 -k2,2 -k3,3 | tail -1)
 PATH := build:$(PATH)
 GOOS ?= $(shell go env GOOS)
 GOARCH ?= $(shell go env GOARCH)

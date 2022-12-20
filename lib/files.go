@@ -46,7 +46,7 @@ func CheckFileExist(file string) bool {
 	return true
 }
 
-//CreateDirIfNotExist : create directory if directory does not exist
+// CreateDirIfNotExist : create directory if directory does not exist
 func CreateDirIfNotExist(dir string) {
 	if _, err := os.Stat(dir); os.IsNotExist(err) {
 		log.Printf("Creating directory for terragrunt: %v", dir)
@@ -58,7 +58,7 @@ func CreateDirIfNotExist(dir string) {
 	}
 }
 
-//WriteLines : writes into file
+// WriteLines : writes into file
 func WriteLines(lines []string, path string) (err error) {
 	var (
 		file *os.File
@@ -110,7 +110,7 @@ func ReadLines(path string) (lines []string, err error) {
 	return
 }
 
-//IsDirEmpty : check if directory is empty (TODO UNIT TEST)
+// IsDirEmpty : check if directory is empty (TODO UNIT TEST)
 func IsDirEmpty(name string) bool {
 
 	exist := false
@@ -128,7 +128,7 @@ func IsDirEmpty(name string) bool {
 	return exist // Either not empty or error, suits both cases
 }
 
-//CheckDirHasTGBin : // check binary exist (TODO UNIT TEST)
+// CheckDirHasTGBin : // check binary exist (TODO UNIT TEST)
 func CheckDirHasTGBin(dir, prefix string) bool {
 
 	exist := false
@@ -148,9 +148,9 @@ func CheckDirHasTGBin(dir, prefix string) bool {
 	return exist
 }
 
-//CheckDirExist : check if directory exist
-//dir=path to file
-//return path to directory
+// CheckDirExist : check if directory exist
+// dir=path to file
+// return path to directory
 func CheckDirExist(dir string) bool {
 	if _, err := os.Stat(dir); os.IsNotExist(err) {
 		return false
@@ -205,11 +205,11 @@ func ReadingFileMsg(filename string) {
 	fmt.Printf("Reading file %s \n", filename)
 }
 
-//retrive file content of regular file
+// retrive file content of regular file
 func RetrieveFileContents(file string) string {
 	fileContents, err := ioutil.ReadFile(file)
 	if err != nil {
-		log.Fatalf("Error: %s\nFailed to read %s file. Follow the README.md instructions for setup. https://github.com/warrensbox/tgswitch/blob/master/README.md\n", err, file)
+		log.Fatalf("Error: %s\nFailed to read %s file. Follow the README.md instructions for setup. https://github.com/EliaBracciSumo/tgswitch/blob/master/README.md\n", err, file)
 	}
 	tgversion := strings.TrimSuffix(string(fileContents), "\n")
 	return tgversion

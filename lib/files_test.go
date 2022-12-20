@@ -13,7 +13,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/warrensbox/tgswitch/lib"
+	"github.com/EliaBracciSumo/tgswitch/lib"
 )
 
 // TestRenameFile : Create a file, check filename exist,
@@ -130,7 +130,7 @@ func TestCreateDirIfNotExist(t *testing.T) {
 	cleanUp(installLocation)
 }
 
-//TestWriteLines : write to file, check readline to verify
+// TestWriteLines : write to file, check readline to verify
 func TestWriteLines(t *testing.T) {
 
 	installPath := "/.terragrunt.versions_test/"

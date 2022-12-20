@@ -22,12 +22,12 @@ import (
 	"path/filepath"
 	"strings"
 
+	lib "github.com/EliaBracciSumo/tgswitch/lib"
 	"github.com/hashicorp/hcl2/gohcl"
 	"github.com/hashicorp/hcl2/hclparse"
 	"github.com/manifoldco/promptui"
 	"github.com/pborman/getopt"
 	"github.com/spf13/viper"
-	lib "github.com/warrensbox/tgswitch/lib"
 )
 
 const (
