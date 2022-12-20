@@ -6,7 +6,7 @@ import (
 	"os/user"
 	"testing"
 
-	"github.com/warrensbox/tgswitch/lib"
+	"github.com/EliaBracciSumo/tgswitch/lib"
 )
 
 // TestCreateSymlink : check if symlink exist-remove if exist,

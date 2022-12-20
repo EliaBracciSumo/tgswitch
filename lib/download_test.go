@@ -9,7 +9,7 @@ import (
 	"runtime"
 	"testing"
 
-	lib "github.com/warrensbox/tgswitch/lib"
+	lib "github.com/EliaBracciSumo/tgswitch/lib"
 )
 
 // TestDownloadFromURL_FileNameMatch : Check expected filename exist when downloaded

@@ -1,4 +1,4 @@
-module github.com/warrensbox/tgswitch
+module github.com/EliaBracciSumo/tgswitch
 
 go 1.16
 

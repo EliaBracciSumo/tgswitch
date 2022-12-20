@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/warrensbox/tgswitch/lib"
+	"github.com/EliaBracciSumo/tgswitch/lib"
 )
 
 // TestNewCommand : pass value and check if returned value is a pointer
