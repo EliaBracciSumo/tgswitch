@@ -84,4 +84,6 @@ runtestenv "env variable" "0.37.1" "v0.37.1"
 #runtestenv "env variable" "0.26.7" "v0.26.7"
 runtestarg "passing argument" "0.36.1" "v0.36.1"
 # M1 darwin arm64 test
+runtestarg "passing argument" "0.28.0" "v0.28.0"
+# M1 darwin arm64 test
 runtestarg "passing argument" "0.26.7" "v0.26.7"
